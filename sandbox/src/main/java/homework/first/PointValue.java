@@ -1,17 +1,15 @@
 package homework.first;
 
 public class PointValue {
-  public double p1; // первая точка по графе x
-  public double p2; // первая точка по графе y
-  public double p3; // вторая точка по графе x
-  public double p4; // вторая точка по графе y
-  public PointValue (double p1, double p2, double p3, double p4) {
-    this.p1 = p1;
-    this.p2 = p2;
-    this.p3 = p3;
-    this.p4 = p4;
+  public double x; // переменная х точки
+  public double y; // переменная y точки
+
+  public PointValue(double x, double y) {
+    this.x = x;
+    this.y = y;
   }
-  public double distance() {
-    return Math.sqrt((p3 - p1)*(p3 - p1) + (p4 - p2)*(p4-p2));
+
+  public double distance(PointValue p2) {
+    return Math.sqrt(Math.pow(p2.x - this.x, 2) + Math.pow(p2.y - this.y, 2));
   }
 }

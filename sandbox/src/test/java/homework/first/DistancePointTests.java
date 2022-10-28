@@ -7,19 +7,22 @@ public class DistancePointTests {
 
   @Test
   public void testDistance() {
-    PointValue fd = new PointValue(1, 2, 3, 4);
-    Assert.assertEquals(fd.distance(), 2.8284271247461903);
+    PointValue fd = new PointValue(3, 5);
+    PointValue fd2 = new PointValue(3, 8);
+    Assert.assertEquals(fd.distance(fd2), 3.0);
   }
 
   @Test
   public void testDistanceTwo() {
-    PointValue sd = new PointValue(2, 2, 2, 2);
-    Assert.assertEquals(sd.distance(), 0.0);
+    PointValue sd = new PointValue(2, 2);
+    PointValue sd2 = new PointValue(2, 2);
+    Assert.assertEquals(sd.distance(sd2), 0.0);
   }
 
   @Test
   public void testDistanceThree() {
-    PointValue sd = new PointValue(2, 2, 2, 3);
-    Assert.assertEquals(sd.distance(), 6.0); // данный тест должен упасть, потому что ждем ответ 1.0
+    PointValue td = new PointValue(2, 2);
+    PointValue td2 = new PointValue(2, 2);
+    Assert.assertEquals(td.distance(td2), 1.0); // данный тест должен упасть, потому что ждем ответ 1.0
   }
 }
