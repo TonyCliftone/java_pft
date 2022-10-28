@@ -1,10 +1,10 @@
 ru/stqa/pft/sandbox/MyFirstProgram.java
  ru.stqa.pft.sandbox.MyFirstProgram
-ru/stqa/pft/sandbox/Rectangle.java
- ru.stqa.pft.sandbox.Rectangle
-ru/stqa/pft/sandbox/Square.java
- ru.stqa.pft.sandbox.Square
-homework/first/Point.java
- homework.first.Point
 homework/first/PointValue.java
  homework.first.PointValue
+ru/stqa/pft/sandbox/Square.java
+ ru.stqa.pft.sandbox.Square
+ru/stqa/pft/sandbox/Rectangle.java
+ ru.stqa.pft.sandbox.Rectangle
+homework/first/Point.java
+ homework.first.Point
